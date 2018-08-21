@@ -47,6 +47,8 @@ function reducer(state = initialState, action) {
                     comment => comment.id === action.id ? { ...comment, votes: comment.votes - 1 } : comment
                 )
             })
+        break;
+        
         default:
             return state;
     }
